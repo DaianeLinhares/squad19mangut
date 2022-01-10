@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "whvg6UBalqaQj3lNv91UANzVby9L4hUG8OTlupYNrAzE534l12XP7R3l8M/1kk+fJB5cqeGVdyk7nW0F9bi75g==",
+  "dgSpecHash": "GQesGBSibIYypTSdzz2nsRoxlM3r7lp7K19JDyV/T5yND1y6PFcBMrxq7WGm4IPEMW9ylxuPXkPyNHCLs7Yv2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Desktop\\RecodeSquad19\\Mangut\\Mangut.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Desktop\\RecodeSquad19\\squad19mangut\\Mangut\\Mangut.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

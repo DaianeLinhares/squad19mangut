@@ -17,11 +17,27 @@ namespace Mangut.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult Busca()
         {
             return View();
         }
+        public IActionResult QuemSomos()
+        {
+            return View();
+        }
+        public IActionResult Estatisticas()
+        {
+            return View();
+        }
+        public IActionResult FAQ()
+        {
+            return View();
+        }
+        public IActionResult Cadastro()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
