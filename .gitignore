@@ -5,6 +5,7 @@
 ########################################
 #  gist.github.com/indyfromoz/4109296  #
 ########################################
+appsettings.json
 *.com
 *.class
 *.dll
@@ -27,6 +28,7 @@ _UpgradeReport_Files/
 # Directories #
 ###############
 bin/
+.vs/
 obj/
 TestResults/
 ###################
