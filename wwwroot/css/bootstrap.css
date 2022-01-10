@@ -45,7 +45,8 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     min-height: 100vh;
-    font-family: Alatsi
+    font-family: Alatsi;
+    width: calc(100% + 12px) ​!important
 }
 
 hr {
@@ -2511,7 +2512,9 @@ textarea.form-control-lg {
     border: 0;
     border-radius: 0;
     overflow-anchor: none;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s;
+    font-family: 'Baloo Bhai 2';
+    font-weight: bold;
 }
 
     .accordion-button:not(.collapsed) {
@@ -2564,8 +2567,12 @@ textarea.form-control-lg {
     }
 
 .accordion-body {
-    padding: 1rem 1.25rem
+    padding: 1rem 1.25rem;
+    background: #D9EADD;
 }
+    .accordion-body p {
+        font-family: "Baloo Bhai 2" !important
+    }
 
 .accordion-flush .accordion-collapse {
     border-width: 0

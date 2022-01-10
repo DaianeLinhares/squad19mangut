@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" style="overflow-x:hidden">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Mangut</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caladea">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="shortcut icon" href="~/img/icon-mangut.ico">
 </head>
 
 <body style="font-weight: 500;">
@@ -28,13 +30,25 @@
                     <div class="container-fluid"><a data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></a>
                         <div class="collapse navbar-collapse d-none" id="navcol-2">
                             <ul class="navbar-nav text-end ms-auto">
-                                <li class="nav-item text-end"><a asp-action="Cadastro" asp-controller="Home" class="btn btn-primary" id="MainButton-Register" type="button" style="padding: 3px 16px 5px;/*background: #659D80;*//*border-color: #659D80;*/border-radius: 3px 0 0 3px !important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-plus" style="position: relative;top: -1px;">
+                                <li class="nav-item text-end">
+                                    <a asp-controller="Home" asp-action="Cadastro" class="btn btn-primary" id="MainButton-Register" type="button" style="padding: 3px 16px 5px;/*background: #659D80;*//*border-color: #659D80;*/border-radius: 3px 0 0 3px !important;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-plus" style="position: relative;top: -1px;">
                                             <path fill-rule="evenodd" d="M8 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10zM13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"></path>
-                                        </svg>&nbsp; Cadastro</a><a class="btn btn-primary" id="MainButton-Login" type="button" style="padding: 3px 16px 5px;/*background: #659D80;*//*border-color: #659D80;*/margin-left: 1px;border-radius: 0 3px 3px 0 !important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-square" style="position: relative;top: -1px;">
+                                        </svg>&nbsp; Cadastro
+                                    </a><!-- 
+                                    Não separado para evitar a inserção de caractere de espaço
+                                 --><a asp-controller="Home" asp-action="Login" class="btn btn-primary" id="MainButton-Login" type="button" style="padding: 3px 16px 5px;/*background: #659D80;*//*border-color: #659D80;*/margin-left: 1px;border-radius: 0 3px 3px 0 !important;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-square" style="position: relative;top: -1px;">
                                             <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
                                             <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-                                        </svg>&nbsp; Login</a></li>
-                                <li class="nav-item"><a class="btn btn-outline-primary disabled" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" type="button" style="padding: 3px 16px 5px;/*background: #659D80;*//*border-color: #659D80;*/" disabled="" title="Cesta vazia"><i class="fa fa-shopping-basket"></i></a></li>
+                                        </svg>&nbsp; Login
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-primary disabled" href="#" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="bottom" type="button" style="padding: 3px 16px 5px;/*background: #659D80;*//*border-color: #659D80;*/" disabled title="Cesta vazia">
+                                        <i class="fa fa-shopping-basket"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -82,7 +96,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="@(@Url.Action() != "/Home/Catalogo" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="Catalogo">
+                        <a class="@(@Url.Action() != "/Produtos" ? "nav-link" : "nav-link active")" asp-controller="Produtos" asp-action="Index">
                             <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-shop-window">
                                     <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"></path>
@@ -91,7 +105,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="@(@Url.Action() != "/Home/QuemSomos" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="Quem Somos">
+                        <a class="@(@Url.Action() != "/Home/QuemSomos" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="QuemSomos">
                             <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-bar-chart-line">
                                     <path fill-rule="evenodd" d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
@@ -120,15 +134,19 @@
         </main>
     </div>
 
-    <footer class="d-flex justify-content-start align-self-baseline align-items-xxl-end" data-aos="slide-up" data-aos-delay="50" style="width: 100%;height: auto;background: white;position: relative;bottom: -113px;margin-top: 86px;padding-top: 26px;padding-bottom: 16px;box-shadow: 0 -5px 55px rgba(22,22,22,0.22);">
+    <footer class="d-flex justify-content-start align-self-baseline align-items-xxl-end" data-aos="slide-up" data-aos-delay="50" style="width: 100%;height: auto;background: white;position: relative;bottom: -301px;margin-top: 180px;padding-top: 26px;padding-bottom: 16px;box-shadow: 0 -5px 55px rgba(22,22,22,0.22);">
         <div class="container">
             <div class="row d-lg-flex flex-column justify-content-lg-center">
-                <div class="col-lg-auto text-primary d-xxl-flex justify-content-center align-content-end align-self-center align-items-xxl-end">
-                    <p class="text-center text-light d-lg-flex justify-content-lg-center align-items-lg-center" style="text-shadow: 1px 1px 1px rgba(34,34,34,0.16), 2px 2px 4px var(--km-primary);text-align: justify !important;"><span style="/*background-color: #008000;*/"><br><br><em>"Qualidade de vida é viver daquilo que a natureza tem a oferecer"</em><br><br><br></span></p>
+                <div class="col-lg-auto text-primary d-flex justify-content-center align-content-end align-self-center align-items-end">
+                    <p class="text-center text-light d-lg-flex justify-content-lg-center align-items-lg-center" style="text-shadow: 1px 1px 1px rgba(34,34,34,0.16), 2px 2px 4px var(--km-primary);text-align: justify !important;">
+                        <span style="opacity: 0.33;margin-bottom: 14px;">Mangut (2022) - Projeto Social Open-Source</span>
+                    </p>
                 </div>
-                <div class="col-auto d-flex flex-column flex-grow-0 justify-content-center align-content-around align-self-center flex-wrap align-items-lg-center"><img class="d-lg-flex justify-content-lg-center align-items-lg-center" src="assets/img/recode2021-squad19.png?h=36fdc00aa0f0d637cc52b12daa0477d6" style="margin-bottom: 16px;height: 88px !important;width: auto !important;z-index: 2;">
-                    <p class="text-center text-white d-flex d-xxl-flex justify-content-center align-items-center mx-auto justify-content-md-center align-items-md-center align-items-lg-center justify-content-xxl-center align-items-xxl-center" style="text-shadow: 1px 1px 1px rgb(255,138,0);font-size: 15px;position: relative;top: -30px;left: 0px;font-family: 'Alatsi';color: rgb(255,225,2) !important;background: linear-gradient(rgb(112,81,222), rgb(87,64,199));z-index: 2;padding: 0 8px 2px;border-radius: 0 0 6px 6px;text-transform: uppercase;display: block;width: 62px;">Squad</p><img src="https://www.recodepro.org.br/wp-content/uploads/2021/04/recodepro.png" style="height: 32px;image-rendering: crisp-edges;width: auto;position: relative;top: -106px;left: 114px;filter: brightness(1.1) saturate(1.4);">
-                    <div class="w-100"></div>
+                <div class="col-auto d-flex flex-column flex-grow-0 justify-content-center align-content-around align-self-center flex-wrap align-items-center" style="height: 130px;width: 130px;position: relative;">
+                    <img class="d-lg-flex justify-content-lg-center align-items-lg-center" src="~/img/recode2021-squad19.png" style="margin-bottom: 16px;height: 88px !important;width: auto !important;z-index: 2;position: absolute;">
+                    <p class="text-center text-white d-flex d-xxl-flex justify-content-center align-items-center mx-auto justify-content-md-center align-items-md-center align-items-lg-center justify-content-xxl-center align-items-xxl-center" style="text-shadow: 1px 1px 1px rgb(255,138,0);font-size: 15px;position: absolute;top: 83px;left: 34px;font-family: 'Alatsi';color: rgb(255,225,2) !important;background: linear-gradient(rgb(112,81,222), rgb(87,64,199));z-index: 0;padding: 15px 8px 2px;border-radius: 0 0 6px 6px;text-transform: uppercase;display: block;width: 62px;">Squad</p>
+                    <img src="https://www.recodepro.org.br/wp-content/uploads/2021/04/recodepro.png" style="height: 36px;image-rendering: crisp-edges;width: auto;position: absolute;top: 51px;left: 124px;filter: brightness(101%) saturate(191%);">
+                    <img src="~/img/sOT6LAPm_4x.png" style="height: 92px;image-rendering: crisp-edges;width: auto;position: relative;top: -8px;left: -107px;filter: drop-shadow(2px 3px 2px rgba(0,0,0,.3)) brightness(250%);">
                 </div>
             </div>
         </div>
