@@ -10,21 +10,20 @@
 # Projeto Mangut
 Projeto-solução de site voltado ao tema Indígena, buscando meios de usar a tecnologia como vetor de transformação do **Eu**, do **Nós**, e do **Todos Nós**, ao tentarmos solucionar um problema/dificuldade de um grupo específico da sociedade.
 
-Para contato, pesquisa e acompanhamento do nosso projeto, visite o nosso [Discord]()
+Para contato, pesquisa e acompanhamento do nosso projeto, visite o nosso [Discord](https://discord.gg/vVc6yyAvB5)
 <br><br>
 
 ## Objetivo
-Nosso objetivo é de criarmos uma aplicação web, que facilite a negociação da venda de alimentos orgânicos da Tribo Pataxó com vendedores na região. 
+Nosso objetivo é de conseguirmos impactar, positivamente, a vida dos povos originários, ao oferecermos uma ferramenta que vise na equidade e liberdade financeira dessa parcela da população brasileira.
 
-Ao sermos mais um meio de reforçarmos a autonomia e sua independência financeira, ajudamos tanto a evitar o desperdício de alimentos apropriados para o consumo, como também aos vendedores locais que possuirão mais uma opção de distribuidor, destacando a característica dos alimentos cultivados sem o uso de agrotóxicos.
+Acreditamos que o impacto sociocultural na transformação de vidas, é mais importante do que monopolizar um serviço por rentabilidade.
 
 ## Tecnologias
 - ASP.NET (com MVC e EF6)
 - SQL Server
 - AJAX
-- JavaScript
-- Bootstrap.js
-- Slick.js
+- Bootstrap
+- Slick
 
 ## Linguagens
 - C#
