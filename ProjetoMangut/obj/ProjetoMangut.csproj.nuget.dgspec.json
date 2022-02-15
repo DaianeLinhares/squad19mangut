@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj": {}
+    "D:\\Files\\Visual Studio\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj": {}
   },
   "projects": {
-    "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj": {
+    "D:\\Files\\Visual Studio\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj",
+        "projectUniqueName": "D:\\Files\\Visual Studio\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj",
         "projectName": "ProjetoMangut",
-        "projectPath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj",
-        "packagesPath": "C:\\Users\\Frederico\\.nuget\\packages\\",
-        "outputPath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\ProjetoMangut\\ProjetoMangut\\obj\\",
+        "projectPath": "D:\\Files\\Visual Studio\\ProjetoMangut\\ProjetoMangut\\ProjetoMangut.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "D:\\Files\\Visual Studio\\ProjetoMangut\\ProjetoMangut\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Frederico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,11 +46,11 @@
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
