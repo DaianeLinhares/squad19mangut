@@ -19,7 +19,7 @@ Nosso objetivo é de conseguirmos impactar, positivamente, a vida dos povos orig
 Acreditamos que o impacto sociocultural na transformação de vidas, é mais importante do que monopolizar um serviço por rentabilidade.
 
 ## Tecnologias
-- ASP.NET (com MVC e EF6)
+- ASP.NET (com MVC e EF3)
 - SQL Server
 - AJAX
 - Bootstrap
