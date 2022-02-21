@@ -8847,11 +8847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Frederico\\Desktop\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj",
+      "projectUniqueName": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj",
       "projectName": "SegundaEntrega",
-      "projectPath": "C:\\Users\\Frederico\\Desktop\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj",
+      "projectPath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj",
       "packagesPath": "C:\\Users\\Frederico\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Frederico\\Desktop\\SegundaEntrega\\SegundaEntrega\\obj\\",
+      "outputPath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Frederico\\AppData\\Roaming\\NuGet\\NuGet.Config",

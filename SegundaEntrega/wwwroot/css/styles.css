@@ -405,3 +405,35 @@ button {
 .membersList div[class^=col]:hover > img {
     box-shadow: 0 0 0 100vw #000
 }
+
+
+.manager-stylish .nav-item .nav-link {
+    color: var(--bs-danger)
+}
+
+    .manager-stylish .nav-item .nav-link.active {
+        color: var(--bs-white);
+        background: var(--bs-danger)
+    }
+
+.bg-pattern {
+    background-position: 50% 30%;
+    padding: 7px;
+    background-size: 105px;
+    text-shadow: 2px 2px #ecdabe, -2px 2px #ecdabe, 2px -2px #ecdabe, -2px -2px #ecdabe, 3px 0 #ecdabe, 0 3px #ecdabe, -3px 0 #ecdabe, 0 -3px #ecdabe;
+    font-size: 38px;
+    position: relative;
+    font-family: 'Alatsi';
+    left: -28px;
+    width: calc(100% + 56px);
+    box-shadow: 0 0 0 8px #ecdabe, 0 -36px 0 8px #ecdabe, 0 -46px 2px 0px #0000001f;
+    margin-top: 90px !important;
+    background: url(../img/new-pattern.jpg);
+    background-size: 83px;
+    color: #4b1606 !important;
+    border-radius: 9px;
+}
+
+button {
+    border-radius: 9px;
+}

@@ -1,9 +1,10 @@
 ﻿@page
+@using Microsoft.AspNetCore.Identity.UI.V3.Pages.Account.Internal
 @model RegisterModel
 @{
-    ViewData["Title"] = "Criar nova conta";
+    ViewData["Title"] = "Register";
 }
-<br />
+
 <h1>&nbsp;</h1>
 
 <div class="row">
@@ -34,6 +35,7 @@
         </form>
     </div>
 </div>
+       
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

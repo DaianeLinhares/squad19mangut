@@ -4,11 +4,9 @@
     ViewData["Title"] = "New";
 }
 
-<div class="col-md-10 mx-auto py-4">
+<div class="col-md-10 mx-auto py-4 backcard">
+    <h4 class="text-danger text-uppercase" style="font-family: 'Alatsi' !important">Adicionar produto</h4>
     <div class="card">
-        <div class="card-header bg-primary text-uppercase text-white">
-            <h4>Adicionar produto</h4>
-        </div>
         <div class="card-body">
             <form enctype="multipart/form-data" asp-action="New">
                 <div class="row">
@@ -33,7 +31,7 @@
                             <label asp-for="ImagemProduto" class="control-label"></label>
                             <div class="custom-file">
                                 <input asp-for="ImagemProduto" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">Choose file</label>
+                                <label class="custom-file-label" for="customFile"></label>
                             </div>
                             <span asp-validation-for="ImagemProduto" class="text-danger"></span>
                         </div>

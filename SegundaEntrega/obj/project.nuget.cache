@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FfzJGGBX3K6TU7uuJyTFfj2ozIGfpdLJb3WGOl76jnp0PuQYCg4k2NQpKoNbZeHT4aLmZZrkuxlsA6CXJQzrRw==",
+  "dgSpecHash": "2wjU3TUbrhDQ+edHIJAtWVRSCQo2ajIrziOiiSQ3SbOJCsvxdfexenT1aTWa2iPgYFJJ8p1+/CKMcmC3k2Udow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Frederico\\Desktop\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj",
+  "projectFilePath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Frederico\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.21\\microsoft.aspnetcore.cryptography.internal.3.1.21.nupkg.sha512",
     "C:\\Users\\Frederico\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.21\\microsoft.aspnetcore.cryptography.keyderivation.3.1.21.nupkg.sha512",

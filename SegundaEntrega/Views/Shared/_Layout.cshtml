@@ -1,11 +1,16 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+
+<!DOCTYPE html>
 <html lang="pt-br" style="overflow-x:hidden">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Mangut</title>
+    <title>@(@Url.Action() != "/" ? @ViewData["Title"]+"  >  " : "")Mangut</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Bhai+2">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caladea">
@@ -56,7 +61,7 @@
     </div><div class="website-logo d-none d-sm-block">
     
 </div>
-    <nav class="navbar navbar-dark navbar-expand-md sticky-top bg-primary text-center" id="MainMenu" style="background: linear-gradient(0deg, rgba(5,255,150,0.16) 0%, rgba(52,213,88,0.26)), rgba(1,36,20,0.53);backdrop-filter: blur(5px);background-color: #ca2a07 !important;z-index: 7;box-shadow: 0px 0px;">
+    <nav class="navbar navbar-dark navbar-expand-md sticky-top text-center" id="MainMenu" style="z-index: 7;box-shadow: 0px 0px;background-color: #e95711 !important;">
         <div class="container-fluid"><a class="navbar-brand d-md-none justify-content-xxl-start" href="#" style="color: var(--bs-light);text-shadow: 0px 0px 1px #80b88d, 0px 0px 2px var(--bs-green), 0px 0px 3px var(--bs-green);">
             <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-person-bounding-box" style="color: rgba(79,255,107,0.73);/*font-size: 90px;*//*text-shadow: 0px 0px 14px var(--km-black);*/border-style: none;/*border-color: var(--bs-green);*/margin-right: 12px;margin-left: 12px;position: relative;top: -2px;filter: drop-shadow(-1px -1px 1px rgba(0,0,0,.5));">
                     <path fill-rule="evenodd" d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"></path>
@@ -67,17 +72,17 @@
             <div class="collapse navbar-collapse text-start" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="@(@Url.Action() != "/Home/Home" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="Home">
+                        <a class="@(@Url.Action() != "/" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="Home">
                             <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-house-door-fill">
                                     <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"></path>
                                     <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"></path>
                                 </svg>
-                            </span>Inicio
+                            </span>Início
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="@(@Url.Action() != "/" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="Index">
+                        <a class="@(@Url.Action() != "/Home/Index" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="Index">
                             <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-bar-chart-line">
                                     <path fill-rule="evenodd" d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"></path>
@@ -94,15 +99,18 @@
                             </span>Na região
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="@(@Url.Action() != "/Produtoes/Create" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="New">
-                            <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-shop-window">
-                                    <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"></path>
-                                </svg>
-                            </span>Cadastrar Produto
-                        </a>
-                    </li>
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <a class="@(@Url.Action() != "/Home/New" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="New">
+                                <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" class="bi bi-shop-window">
+                                        <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"></path>
+                                    </svg>
+                                </span>Cadastrar Produto
+                            </a>
+                        </li>
+                    }
                     <li class="nav-item">
                         <a class="@(@Url.Action() != "/Home/QuemSomos" ? "nav-link" : "nav-link active")" asp-controller="Home" asp-action="QuemSomos">
                             <span style="margin-right: 12px;position: relative;left: 3px;top: -2px;">
