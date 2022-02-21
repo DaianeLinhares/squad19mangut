@@ -437,3 +437,79 @@ button {
 button {
     border-radius: 9px;
 }
+
+#MainMenu {
+    background-color: #e95711 !important;
+}
+
+.manager-stylish .nav-item .nav-link {
+    color: #fb6300;
+    border-radius: 9px;
+    position: relative;
+    left: 0;
+    bottom: 0px;
+    margin-bottom: 5px;
+    padding: 8px 16px;
+}
+
+    .manager-stylish .nav-item .nav-link.active {
+        color: var(--bs-white);
+        background: #fb6300;
+        left: 5px;
+        box-shadow: 0 2px 3px #fb630099;
+        padding: 8px 12px 8px 24px;
+    }
+
+        .manager-stylish .nav-item .nav-link.active:before {
+            content: "";
+            position: absolute;
+            right: -16px;
+            width: 1px;
+            height: 1px;
+            border: 8px solid transparent;
+            border-left-color: #fb6300;
+            top: 12.6px
+        }
+
+    .manager-stylish .nav-item .nav-link:hover {
+        box-shadow: 0px 2px 3px currentColor;
+        transition: .05s ease-in;
+        filter: saturate(1.5);
+        left: 5px;
+        padding: 8px 12px 8px 24px;
+    }
+
+    .manager-stylish .nav-item .nav-link:active {
+        box-shadow: none;
+        transition: .05s ease-in;
+        color: var(--bs-success);
+        left: 5px;
+        bottom: -3px;
+        padding: 8px 12px 8px 24px;
+    }
+
+    .manager-stylish .nav-item .nav-link:not(.active):hover {
+        background: #ffffffa6;
+        box-shadow: none;
+    }
+
+.manage-account .col-md-9 {
+    padding: 8px 32px !important;
+}
+
+.manage-account button {
+    margin: 12px 0;
+    background: white;
+    color: var(--bs-success);
+}
+
+    .manage-account button:hover {
+        background: var(--bs-success);
+        color: white;
+        box-shadow: 0 2px 9px var(--bs-success);
+    }
+
+h2, h3, h4 {
+    font-family: 'Alatsi';
+    opacity: .9
+}

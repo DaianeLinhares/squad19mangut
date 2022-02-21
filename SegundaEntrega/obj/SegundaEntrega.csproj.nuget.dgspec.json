@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj": {}
+    "C:\\Users\\Remakker\\Desktop\\SegundaEntrega-RevisaoFront\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj": {}
   },
   "projects": {
-    "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj": {
+    "C:\\Users\\Remakker\\Desktop\\SegundaEntrega-RevisaoFront\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj",
+        "projectUniqueName": "C:\\Users\\Remakker\\Desktop\\SegundaEntrega-RevisaoFront\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj",
         "projectName": "SegundaEntrega",
-        "projectPath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\SegundaEntrega.csproj",
-        "packagesPath": "C:\\Users\\Frederico\\.nuget\\packages\\",
-        "outputPath": "C:\\Cursos\\Recode\\Projeto Final Terceira entrega\\MangutWell\\squad19mangut\\SegundaEntrega\\obj\\",
+        "projectPath": "C:\\Users\\Remakker\\Desktop\\SegundaEntrega-RevisaoFront\\SegundaEntrega\\SegundaEntrega\\SegundaEntrega.csproj",
+        "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Remakker\\Desktop\\SegundaEntrega-RevisaoFront\\SegundaEntrega\\SegundaEntrega\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Frederico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Remakker\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

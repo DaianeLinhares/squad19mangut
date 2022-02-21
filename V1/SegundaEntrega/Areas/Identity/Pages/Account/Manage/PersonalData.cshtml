@@ -1,0 +1,30 @@
+﻿@page
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Dados pessoais";
+    ViewData["ActivePage"] = ManageNavPages.PersonalData;
+}
+
+<h4>@ViewData["Title"]</h4>
+
+<div class="row">
+    <div class="col-md-6">
+         <p>
+            Sua conta contém dados pessoais que você nos forneceu.
+         </p>
+         <p>
+            Em respeito ao seu direito de uso de dados e de acordo com a Lei Geral de Proteção de Dados (LGPD), você poderá deletar a sua conta a qualquer momento.
+         </p>
+         <br />
+         <p>
+            <strong>ATENÇÃO: Todos os seus dados serão perdidos e não poderão ser recuperados.</strong> <br /><br />Deseja mesmo prosseguir?
+         </p>
+        <p>
+            <a id="delete" asp-page="DeletePersonalData" class="btn btn-danger" style="border-radius:9px;filter:saturate(1.5)">Deletar</a>
+        </p>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
