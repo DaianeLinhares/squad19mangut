@@ -1,10 +1,11 @@
 
-> ## Vídeo Demo da Solução
-> [YouTube](https://youtu.be/swMZcM-T69A)
+
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/42657376/154155358-259bdbc8-fa88-4f5c-8681-dc820060914f.png)
+
+
 
 # Projeto Mangut
 Projeto-solução de site voltado ao tema Indígena, buscando meios de usar a tecnologia como vetor de transformação do **Eu**, do **Nós**, e do **Todos Nós**, ao tentarmos solucionar um problema/dificuldade de um grupo específico da sociedade.
@@ -18,7 +19,7 @@ Nosso objetivo é de conseguirmos impactar, positivamente, a vida dos povos orig
 Acreditamos que o impacto sociocultural na transformação de vidas, é mais importante do que monopolizar um serviço por rentabilidade.
 
 ## Tecnologias
-- ASP.NET (com MVC e EF6)
+- ASP.NET (com MVC e EF3)
 - SQL Server
 - AJAX
 - Bootstrap

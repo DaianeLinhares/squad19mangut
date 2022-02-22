@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2022-02-21T23:34:53.0864292Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2022-02-21T23:34:39.2113467Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "4fe556d5-069e-41ae-ba8c-ccc40c741374"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Mangut"
+    }
+  }
+}
